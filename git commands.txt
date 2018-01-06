@@ -1,0 +1,62 @@
+git init
+git config --global user.name "aman"
+git config --global user.email "xyz@gmail.com"
+git config --list
+git config user.email
+git config user.name
+git help
+git help commit
+
+to exit vim --> esc key , then type ":wq"
+
+git log --> to see various commits done
+git commit --> to commit the changes that were made
+git status --> to see something that is not commited yet
+git add file1.js --> to add file(not commmited yet)
+
+git commit -m "add file02.js"
+
+to use notepad for git commit message  use -->
+git config --global core.editor "notepad.exe"
+
+git log --oneline --> for one line log message
+
+git diff (if i have made changes that are not added or commited yet then "git diff" tekls me what are the differences i have now, but if we have added modified file, then it wont show the differences)
+
+git checkout -b gitlearning (creates new branch git learning)
+
+git branch ( list all the branches i have and breanch with * denotes the branch on which i am curently)
+
+git add *.js (to add all js files)
+git add -A (adds all the files in the directory) or git add .
+
+git merge gitlearning --> the branch name mentioned here is merged with the current branch
+
+git checkout master (to switch between branches)
+
+git log --oneline --color --graph --decorate    (used to create commit tree)
+
+creating aliases --> ()
+
+git config --global alias.fulltree "log --color --oneline --graph --decorate --all"  (to see full graph including all the branches, now just type git fulltree)
+
+
+push an existing repository from the command line-->
+
+git remote add origin https://github.com/n1ghtk1ng/git_intro.git
+git push -u origin master
+
+git push origin --all (to push all the branches)
+
+
+fork --> repository on the cloud
+clone --> repository on my computer
+
+git clone url --> to clone a repository
+
+whenever we clone something, there is a remote called origin that points back to the place from where we have cloned(i.e.www.github.com/n1ghtk1ng/make_a_pr)
+
+to see the remotes --> git remote
+
+www.github.com/github/gitignore  --> place for various frameworks .gitignore files
+	

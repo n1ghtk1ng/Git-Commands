@@ -1,0 +1,22 @@
+What does Git does?
+
+-->tracks changes and versions... every time we commit something we are saving a new version and at any time in history any one can go back, reload it at the state that it was in at that very version
+-->allows non-destructive rollback... we can create branch and start playing with code that can break the project but we can play with it and if it breaks the project, i can simply rollback and i can break it when someone else is working on their local machine doing something else and when i break it , they can still work on it because they are working on their own version of it and their own branch
+-->enables multi user sharing
+--->easier and more secure deployment
+
+git works at 2 places... every memn=ber of the team will have thier own version on their local computer and one version on some sort of server which we call a repository.. that repository can have multiple files or git repositories on it and github is a common repository that stores public git repository.. so it is a server basically that runs all these things that stores it and allows us to manage our git repositories on there and we all have versions on our local computer so i can throw everything on github and if u wanted to try my project u can dowload to your local version, manipulate on ur local version and then request to submit it back it to github so we always have this server version that is in the cloud usually
+git allows us to track every single change made in history through the server and the local versions can basically clone or download or pull the changes down and syn up with the server but server verison is the master copy
+
+git technology is an open source technology , but github is a private company that runs a git server with social networking type features in it
+
+
+install git on ubuntu---
+sudo apt-get install git-all
+
+install git on windows---
+http://gitforwindows.org/
+
+git config is our global config file.. every git installation has a global config file .. this is the default configurations for everything that we do with git so we are going to be setting our user.name and user.email and these are the signatures used on every single commit ... every time we submit a version it signs it with ur name and ur email address so this is going to be ur public email adress a=whenever we are going to sign anything .. any sort of commit.... there are other configs as well such as colors of branches, default pushes and stuff like that.... there is a global config file (defaults for this computer) but for a single project we can have a different file if we want inside the projects git folder and that way one project can have diffwerent info.. so if we are using a work`s email address for one project,we can have that separate config file and for all those commots in that project, that file is used
+
+git config --list
